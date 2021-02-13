@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "Post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "posts",
+      "dominant": true
+    },
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "editor.two-col",
+        "editor.text",
+        "editor.media"
+      ]
+    },
+    "Banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "languages": {
+      "collection": "languages",
+      "via": "posts",
+      "dominant": true
+    }
+  }
+}

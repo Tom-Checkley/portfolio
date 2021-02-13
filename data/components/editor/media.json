@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_editor_media",
+  "info": {
+    "name": "Media",
+    "icon": "photo-video"
+  },
+  "options": {},
+  "attributes": {
+    "Media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

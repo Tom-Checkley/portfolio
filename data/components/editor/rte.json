@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_editor_rtes",
+  "info": {
+    "name": "RTE",
+    "icon": "pen-fancy"
+  },
+  "options": {},
+  "attributes": {
+    "RTE": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Categories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Category": {
+      "type": "string"
+    },
+    "posts": {
+      "via": "categories",
+      "collection": "post"
+    }
+  }
+}
