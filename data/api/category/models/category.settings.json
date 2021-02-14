@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "languages",
+  "collectionName": "categories",
   "info": {
-    "name": "Languages"
+    "name": "Category",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,11 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "language": {
-      "type": "string"
+    "Category": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "posts": {
-      "via": "languages",
+      "via": "categories",
       "collection": "post"
     }
   }

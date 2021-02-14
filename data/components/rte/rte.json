@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_rte_rtes",
+  "info": {
+    "name": "RTE",
+    "icon": "keyboard"
+  },
+  "options": {},
+  "attributes": {
+    "SectionHeading": {
+      "type": "string"
+    },
+    "Class": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "BackgroundImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

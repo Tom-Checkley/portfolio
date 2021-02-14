@@ -1,5 +1,5 @@
 {
-  "name": "cms",
+  "name": "data",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -13,20 +13,19 @@
   "dependencies": {
     "strapi": "3.4.6",
     "strapi-admin": "3.4.6",
-    "strapi-connector-mongoose": "3.4.6",
-    "strapi-plugin-content-manager": "3.4.6",
+    "strapi-utils": "3.4.6",
     "strapi-plugin-content-type-builder": "3.4.6",
-    "strapi-plugin-email": "3.4.6",
-    "strapi-plugin-graphql": "3.4.6",
-    "strapi-plugin-upload": "3.4.6",
+    "strapi-plugin-content-manager": "3.4.6",
     "strapi-plugin-users-permissions": "3.4.6",
-    "strapi-utils": "3.4.6"
+    "strapi-plugin-email": "3.4.6",
+    "strapi-plugin-upload": "3.4.6",
+    "strapi-connector-mongoose": "3.4.6"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "89309076-e4a7-4734-b545-9a2a8d74c1c3"
+    "uuid": "fc19c054-21a0-45d8-97ce-928b7b1889ae"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
