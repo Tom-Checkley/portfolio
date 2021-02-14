@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_two_col_media_two_col_medias",
+  "info": {
+    "name": "TwoColMedia",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SectionTitle": {
+      "type": "string",
+      "unique": true,
+      "required": false
+    },
+    "Class": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
+    },
+    "Media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "RTL": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "posts",
   "info": {
-    "name": "Post",
-    "description": ""
+    "name": "Post"
   },
   "options": {
     "increments": true,
@@ -11,37 +10,36 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Title": {
-      "type": "string"
-    },
-    "categories": {
-      "collection": "categories",
-      "via": "posts",
-      "dominant": true
-    },
-    "Content": {
-      "type": "dynamiczone",
-      "components": [
-        "editor.two-col",
-        "editor.text",
-        "editor.media"
-      ]
+    "PostHeading": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "Banner": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
-        "files",
         "videos"
       ],
       "plugin": "upload",
       "required": false
     },
-    "languages": {
-      "collection": "languages",
+    "categories": {
+      "collection": "category",
       "via": "posts",
       "dominant": true
+    },
+    "languages": {
+      "collection": "language",
+      "via": "posts",
+      "dominant": true
+    },
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "rte.rte"
+      ]
     }
   }
 }

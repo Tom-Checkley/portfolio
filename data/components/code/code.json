@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_code_codes",
+  "info": {
+    "name": "Code",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "CodeRTE": {
+      "type": "richtext",
+      "required": true
+    },
+    "Language": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

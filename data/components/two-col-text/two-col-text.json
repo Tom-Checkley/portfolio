@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_two_col_text_two_col_texts",
+  "info": {
+    "name": "TwoColText",
+    "icon": "grip-lines-vertical"
+  },
+  "options": {},
+  "attributes": {
+    "SectionHeading": {
+      "type": "string"
+    },
+    "TextLeft": {
+      "type": "richtext"
+    },
+    "TextRight": {
+      "type": "richtext"
+    },
+    "BackgroundImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Class": {
+      "type": "string"
+    }
+  }
+}
