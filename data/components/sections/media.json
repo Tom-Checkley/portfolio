@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_sections_media",
+  "info": {
+    "name": "Media",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SectionHeading": {
+      "type": "string"
+    },
+    "Media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "FullWidth": {
+      "type": "boolean",
+      "default": true
+    },
+    "ClassVariants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "class-variants.class-variants"
+    }
+  }
+}
