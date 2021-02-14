@@ -1,32 +1,33 @@
 {
-  "collectionName": "components_two_col_text_two_col_texts",
+  "collectionName": "components_sections_two_col_texts",
   "info": {
     "name": "TwoColText",
-    "icon": "grip-lines-vertical"
+    "icon": "pause"
   },
   "options": {},
   "attributes": {
     "SectionHeading": {
       "type": "string"
     },
-    "TextLeft": {
+    "BodyLeft": {
       "type": "richtext"
     },
-    "TextRight": {
+    "BodyRight": {
       "type": "richtext"
     },
     "BackgroundImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
       "required": false
     },
-    "Class": {
-      "type": "string"
+    "ClassVariants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "class-variants.class-variants"
     }
   }
 }

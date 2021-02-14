@@ -1,26 +1,19 @@
 {
-  "collectionName": "components_two_col_media_two_col_medias",
+  "collectionName": "components_sections_two_col_medias",
   "info": {
     "name": "TwoColMedia",
-    "icon": "address-card",
-    "description": ""
+    "icon": "digital-tachograph"
   },
   "options": {},
   "attributes": {
-    "SectionTitle": {
-      "type": "string",
-      "unique": true,
-      "required": false
-    },
-    "Class": {
+    "SectionHeading": {
       "type": "string"
     },
-    "Text": {
-      "type": "richtext",
-      "required": true
+    "Body": {
+      "type": "richtext"
     },
     "Media": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -32,6 +25,11 @@
     "RTL": {
       "type": "boolean",
       "default": false
+    },
+    "ClassVariants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "class-variants.class-variants"
     }
   }
 }
