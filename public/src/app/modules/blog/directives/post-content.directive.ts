@@ -1,10 +1,10 @@
-import { Directive } from '@angular/core';
+import { Directive, ViewContainerRef } from '@angular/core';
 
 @Directive({
   selector: '[appPostContent]'
 })
 export class PostContentDirective {
 
-  constructor() { }
+  constructor(public viewContainerRef: ViewContainerRef) { }
 
 }
