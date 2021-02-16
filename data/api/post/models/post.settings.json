@@ -11,12 +11,12 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "PostHeading": {
+    "postHeading": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "Banner": {
+    "banner": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -27,16 +27,16 @@
       "required": false
     },
     "categories": {
-      "collection": "category",
       "via": "posts",
+      "collection": "category",
       "dominant": true
     },
     "languages": {
-      "collection": "language",
       "via": "posts",
+      "collection": "language",
       "dominant": true
     },
-    "Content": {
+    "content": {
       "type": "dynamiczone",
       "components": [
         "sections.code",

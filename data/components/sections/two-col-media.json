@@ -2,31 +2,32 @@
   "collectionName": "components_sections_two_col_medias",
   "info": {
     "name": "TwoColMedia",
-    "icon": "digital-tachograph"
+    "icon": "digital-tachograph",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "SectionHeading": {
+    "sectionHeading": {
       "type": "string"
     },
-    "Body": {
+    "body": {
       "type": "richtext"
     },
-    "Media": {
-      "collection": "file",
+    "media": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
-    "RTL": {
+    "rtl": {
       "type": "boolean",
       "default": false
     },
-    "ClassVariants": {
+    "classVariants": {
       "type": "component",
       "repeatable": true,
       "component": "class-variants.class-variants"

@@ -2,11 +2,12 @@
   "collectionName": "components_class_variants_class_variants",
   "info": {
     "name": "ClassVariants",
-    "icon": "briefcase"
+    "icon": "briefcase",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "ClassVariant": {
+    "classVariant": {
       "type": "string"
     }
   }

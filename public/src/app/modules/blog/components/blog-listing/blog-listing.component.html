@@ -1,0 +1,15 @@
+<header>
+    <h1>Blog</h1>
+</header>
+<main>
+    <div *ngIf="posts">
+        <ul>
+            <li *ngFor="let post of posts">
+                <a [routerLink]="['/blog/' + post.id]">{{ post.postHeading }}</a>
+            </li>
+        </ul>
+    </div>
+    <aside>
+        <app-blog-filter></app-blog-filter>
+    </aside>
+</main>
