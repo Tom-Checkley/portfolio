@@ -7,10 +7,10 @@
   },
   "options": {},
   "attributes": {
-    "SectionHeading": {
+    "sectionHeading": {
       "type": "string"
     },
-    "Media": {
+    "media": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -20,11 +20,11 @@
       "plugin": "upload",
       "required": false
     },
-    "FullWidth": {
+    "fullWidth": {
       "type": "boolean",
       "default": true
     },
-    "ClassVariants": {
+    "classVariants": {
       "type": "component",
       "repeatable": true,
       "component": "class-variants.class-variants"

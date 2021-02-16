@@ -2,20 +2,21 @@
   "collectionName": "components_sections_two_col_texts",
   "info": {
     "name": "TwoColText",
-    "icon": "pause"
+    "icon": "pause",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "SectionHeading": {
+    "sectionHeading": {
       "type": "string"
     },
-    "BodyLeft": {
+    "bodyLeft": {
       "type": "richtext"
     },
-    "BodyRight": {
+    "bodyRight": {
       "type": "richtext"
     },
-    "BackgroundImage": {
+    "backgroundImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -24,7 +25,7 @@
       "plugin": "upload",
       "required": false
     },
-    "ClassVariants": {
+    "classVariants": {
       "type": "component",
       "repeatable": true,
       "component": "class-variants.class-variants"

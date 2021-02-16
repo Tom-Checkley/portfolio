@@ -50,9 +50,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/prismjs/themes/prism-okaidia.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/prismjs/prism.js",
+              "node_modules/prismjs/components/prism-core.min.js",
+              "node_modules/prismjs/components/prism-scss.min.js",
+              "node_modules/prismjs/components/prism-typescript.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -146,5 +152,8 @@
       }
     }
   },
-  "defaultProject": "public"
+  "defaultProject": "public",
+  "cli": {
+    "analytics": "1f0f4385-bacc-4b6e-8281-0dbe67ad1765"
+  }
 }

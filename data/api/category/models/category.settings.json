@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "categories",
   "info": {
-    "name": "Category",
+    "name": "category",
     "description": ""
   },
   "options": {
@@ -11,14 +11,14 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Category": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
     "posts": {
-      "via": "categories",
-      "collection": "post"
+      "collection": "post",
+      "via": "categories"
     }
   }
 }

@@ -7,13 +7,13 @@
   },
   "options": {},
   "attributes": {
-    "SectionTitle": {
+    "sectionHeading": {
       "type": "string"
     },
-    "Body": {
+    "body": {
       "type": "richtext"
     },
-    "BackgroundImage": {
+    "backgroundImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -23,7 +23,7 @@
       "plugin": "upload",
       "required": false
     },
-    "ClassVariants": {
+    "classVariants": {
       "type": "component",
       "repeatable": true,
       "component": "class-variants.class-variants"

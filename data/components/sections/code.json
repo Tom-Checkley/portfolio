@@ -2,19 +2,19 @@
   "collectionName": "components_sections_codes",
   "info": {
     "name": "code",
-    "icon": "haykal",
+    "icon": "code",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "Language": {
+    "codeLanguage": {
       "type": "string"
     },
-    "Code": {
+    "code": {
       "type": "richtext",
       "required": true
     },
-    "ClassVariants": {
+    "classVariants": {
       "type": "component",
       "repeatable": true,
       "component": "class-variants.class-variants"
