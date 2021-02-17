@@ -8,6 +8,7 @@ import { GetBlogPostService } from '../../services/get-blog-post.service';
 	styleUrls: ['./blog-post.component.scss'],
 })
 export class BlogPostComponent implements OnInit {
+
 	post: any;
 
 	constructor(
@@ -17,9 +18,8 @@ export class BlogPostComponent implements OnInit {
 
 	ngOnInit(): void {
         this.getPostService.getPost(this.route.snapshot.paramMap.get('id'))
-            .subscribe(data => {
-                console.log(data);
-                this.post = data.data.post;
+            .subscribe(res => {
+                this.post = res.data.post;
             })
     }
 }

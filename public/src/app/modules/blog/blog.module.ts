@@ -7,6 +7,13 @@ import { BlogListingComponent } from './components/blog-listing/blog-listing.com
 import { BlogFilterComponent } from './components/blog-filter/blog-filter.component';
 import { BlogPostComponent } from './components/blog-post/blog-post.component';
 import { PostContentDirective } from './directives/post-content.directive';
+import { BlogPostBodyComponent } from './components/post-partials/blog-post-body/blog-post-body.component';
+import { PartialTextComponent } from './components/post-partials/partial-text/partial-text.component';
+import { PartialCodeComponent } from './components/post-partials/partial-code/partial-code.component';
+import { PartialTwoColMediaComponent } from './components/post-partials/partial-two-col-media/partial-two-col-media.component';
+import { PartialTwoColTextComponent } from './components/post-partials/partial-two-col-text/partial-two-col-text.component';
+import { PartialMediaComponent } from './components/post-partials/partial-media/partial-media.component';
+import { MarkdownModule } from 'ngx-markdown';
 
 
 @NgModule({
@@ -15,11 +22,18 @@ import { PostContentDirective } from './directives/post-content.directive';
     BlogListingComponent,
     BlogFilterComponent,
     BlogPostComponent,
-    PostContentDirective
+    PostContentDirective,
+    BlogPostBodyComponent,
+    PartialTextComponent,
+    PartialCodeComponent,
+    PartialTwoColMediaComponent,
+    PartialTwoColTextComponent,
+    PartialMediaComponent
   ],
   imports: [
     CommonModule,
     BlogRoutingModule,
+    MarkdownModule.forRoot()
   ]
 })
 export class BlogModule { }

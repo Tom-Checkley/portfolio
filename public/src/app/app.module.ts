@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
-import { MarkdownModule } from 'ngx-markdown';
+// import { MarkdownModule } from 'ngx-markdown';
 
 
 
@@ -20,7 +20,7 @@ import { MarkdownModule } from 'ngx-markdown';
     AppRoutingModule,
     GraphQLModule,
     HttpClientModule,
-    MarkdownModule.forRoot()
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
