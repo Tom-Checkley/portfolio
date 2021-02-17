@@ -1,8 +1,10 @@
 <article *ngIf="post">
     <header>
-        <img :src="{{ post.banner.url }}" alt="">
+        <ng-template *ngIf="post?.banner?.url">
+            <img :src="../data{{ post.banner.url }}" alt="">
+        </ng-template>
+        
         <h1>{{ post.postHeading }}</h1>
     </header>
-    <ng-template appPostContent></ng-template>
-    
+    <app-blog-post-body *ngIf="post" [sections]="post.content"></app-blog-post-body>    
 </article>
