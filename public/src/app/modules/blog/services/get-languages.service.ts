@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Apollo } from 'apollo-angular';
 import LANGUAGES_QUERY from 'src/app/apollo/queries/language/languages';
+import LANGUAGE_POSTS_QUERY from 'src/app/apollo/queries/language/language-posts';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -18,4 +19,15 @@ export class GetLanguagesService {
 			})
 			.valueChanges;
 	}
+
+    getLanguagePosts(id: string): Observable<any> {
+        return this.apollo
+            .watchQuery<any>({
+                query: LANGUAGE_POSTS_QUERY,
+                variables: {
+                    id: id
+                }
+            })
+            .valueChanges;
+    }
 }

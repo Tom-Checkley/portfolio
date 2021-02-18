@@ -14,6 +14,8 @@ import { PartialTwoColMediaComponent } from './components/post-partials/partial-
 import { PartialTwoColTextComponent } from './components/post-partials/partial-two-col-text/partial-two-col-text.component';
 import { PartialMediaComponent } from './components/post-partials/partial-media/partial-media.component';
 import { MarkdownModule } from 'ngx-markdown';
+import { CategoryPostsComponent } from './components/category-posts/category-posts.component';
+import { LanguagePostsComponent } from './components/language-posts/language-posts.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { MarkdownModule } from 'ngx-markdown';
     PartialCodeComponent,
     PartialTwoColMediaComponent,
     PartialTwoColTextComponent,
-    PartialMediaComponent
+    PartialMediaComponent,
+    CategoryPostsComponent,
+    LanguagePostsComponent
   ],
   imports: [
     CommonModule,

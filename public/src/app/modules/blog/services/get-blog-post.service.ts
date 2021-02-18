@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Apollo } from 'apollo-angular';
 import BLOG_QUERY from 'src/app/apollo/queries/blog-post/blog-post';
-import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,11 +14,11 @@ export class GetBlogPostService {
 		return this.apollo
 			.watchQuery<any>({
 				query: BLOG_QUERY,
-        variables: {
-          id: id
-        }
-			})
-			.valueChanges
+                variables: {
+                id: id
+                }
+            })
+            .valueChanges;
     
 	}
 }

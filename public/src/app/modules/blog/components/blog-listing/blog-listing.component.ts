@@ -18,4 +18,8 @@ export class BlogListingComponent implements OnInit {
             })
     }
 
+    formatPostHeadingUrlString(heading: string) {
+        return heading.replace(/\s+/g, '-');
+    }
+
 }
