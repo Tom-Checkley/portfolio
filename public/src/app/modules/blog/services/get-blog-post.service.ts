@@ -10,12 +10,13 @@ export class GetBlogPostService {
 
   constructor(private apollo: Apollo) {}
 
-  getPost(id: string): Observable<any> {
+  getPost(urlSlug: string): Observable<any> {
+
 		return this.apollo
 			.watchQuery<any>({
 				query: BLOG_QUERY,
                 variables: {
-                id: id
+                    urlSlug: urlSlug
                 }
             })
             .valueChanges;

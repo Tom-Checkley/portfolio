@@ -5,12 +5,12 @@
     <div *ngIf="posts">
         <ul>
             <li *ngFor="let post of posts">
-                <h2><a [routerLink]="['/blog/' + post.id]">{{ post.postHeading }}</a></h2>
-                <time :datetime="post.published_at">{{ post.published_at | date: 'EEEE, dd MMMM yyyy' }}</time>
+                <h2><a [routerLink]="['/blog/', post.urlSlug]">{{ post.postHeading }}</a></h2>
+                <p>Posted on: <time :datetime="post.published_at">{{ post.published_at | date: 'EEEE, dd MMMM yyyy' }}</time></p>
             </li>
         </ul>
     </div>
-    <aside>
+    <!-- <aside>
         <app-blog-filter></app-blog-filter>
-    </aside>
+    </aside> -->
 </main>

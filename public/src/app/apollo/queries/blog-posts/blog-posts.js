@@ -5,6 +5,7 @@ const BLOG_LIST_QUERY = gql`
         posts {
             id
             postHeading
+            urlSlug
             categories {
                 id
                 name

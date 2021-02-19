@@ -23,12 +23,12 @@ export class GetCategoriesService  {
 			.valueChanges;
 	}
 
-	getCategoryPosts(id: string): Observable<any> {
+	getCategoryPosts(urlSlug: string): Observable<any> {
 		return this.apollo
 			.watchQuery<any>({
 				query: CATEGORY_POSTS_QUERY,
 				variables: {
-					id: id
+					urlSlug: urlSlug
 				}
 			})
 			.valueChanges;

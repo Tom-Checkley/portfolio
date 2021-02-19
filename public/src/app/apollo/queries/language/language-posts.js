@@ -1,12 +1,14 @@
 import gql from 'graphql-tag';
 
 const LANGUAGE_POSTS_QUERY = gql`
-    query Language($id: ID!) {
-        language(id: $id) {
+    query Languages($urlSlug: String!) {
+        languages(where: {urlSlug: $urlSlug}) {
             id
+            urlSlug
             name
             posts {
                 id
+                urlSlug
                 postHeading
                 categories {
                     id

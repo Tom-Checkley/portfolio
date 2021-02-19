@@ -1,10 +1,11 @@
 import gql from 'graphql-tag';
 
 const BLOG_QUERY = gql`
-    query Posts($id: ID!) {
-        post(id: $id) {
+    query Posts($urlSlug: String!) {
+        posts(where: {urlSlug: $urlSlug}) {
             id
             postHeading
+            urlSlug
             banner {
                 url
             }

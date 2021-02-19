@@ -4,7 +4,7 @@
         <h3><button>Categories</button></h3>
         <ul>
             <li *ngFor="let category of categories">
-                <a [routerLink]="['/blog/categories/', category.id]" routerLinkActive="active">{{ category.name }}</a>
+                <a [routerLink]="['/blog/categories/', category.urlSlug]" routerLinkActive="active">{{ category.name }}</a>
             </li>
         </ul>
     </div>
@@ -12,7 +12,7 @@
         <h3><button>languages</button></h3>
         <ul>
             <li *ngFor="let language of languages">
-                <a [routerLink]="['/blog/languages/', language.id]" routerLinkActive="active">{{ language.name }}</a>
+                <a [routerLink]="['/blog/languages/', language.urlSlug]" routerLinkActive="active">{{ language.name }}</a>
             </li>
         </ul>
     </div>

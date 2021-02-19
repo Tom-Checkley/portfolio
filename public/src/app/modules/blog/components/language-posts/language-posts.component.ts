@@ -10,7 +10,7 @@ import { GetLanguagesService } from '../../services/get-languages.service';
 export class LanguagePostsComponent implements OnInit {
     posts: any[];
     language: string;
-    id: string;
+    urlSlug: string;
 
   constructor(
     private getLanguagesService: GetLanguagesService,
@@ -19,11 +19,11 @@ export class LanguagePostsComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {
-        this.id = params.get('id');
-        this.getLanguagesService.getLanguagePosts(this.id)
+        this.urlSlug = params.get('urlSlug');
+        this.getLanguagesService.getLanguagePosts(this.urlSlug)
             .subscribe(res => {
-                this.language = res.data.language.name;
-                this.posts = res.data.language.posts;
+                this.language = res.data.languages[0].name;
+                this.posts = res.data.languages[0].posts;
             })
     })
   }
