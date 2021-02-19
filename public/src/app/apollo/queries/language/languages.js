@@ -5,6 +5,7 @@ const LANGUAGES_QUERY = gql`
         languages {
             id
             name
+            urlSlug
         }
     }
 `;

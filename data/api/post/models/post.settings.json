@@ -45,6 +45,11 @@
         "sections.two-col-media",
         "sections.two-col-text"
       ]
+    },
+    "urlSlug": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }

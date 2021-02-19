@@ -17,9 +17,10 @@ export class BlogPostComponent implements OnInit {
     ) {}
 
 	ngOnInit(): void {
-        this.getPostService.getPost(this.route.snapshot.paramMap.get('id'))
+        this.getPostService.getPost(this.route.snapshot.paramMap.get('urlSlug'))
             .subscribe(res => {
-                this.post = res.data.post;
+                this.post = res.data.posts[0];
+                console.log(this.post)
             })
     }
 }

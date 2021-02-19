@@ -20,12 +20,12 @@ export class GetLanguagesService {
 			.valueChanges;
 	}
 
-    getLanguagePosts(id: string): Observable<any> {
+    getLanguagePosts(urlSlug: string): Observable<any> {
         return this.apollo
             .watchQuery<any>({
                 query: LANGUAGE_POSTS_QUERY,
                 variables: {
-                    id: id
+                    urlSlug: urlSlug
                 }
             })
             .valueChanges;

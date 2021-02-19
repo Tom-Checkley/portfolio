@@ -12,9 +12,9 @@ const routes: Routes = [
     path: '', 
     component: BlogComponent,
     children: [
-        { path: 'categories/:id', component: CategoryPostsComponent },
-        { path: 'languages/:id', component: LanguagePostsComponent },
-        { path: ':id', component: BlogPostComponent },
+        { path: 'categories/:urlSlug', component: CategoryPostsComponent },
+        { path: 'languages/:urlSlug', component: LanguagePostsComponent },
+        { path: ':urlSlug', component: BlogPostComponent },
         { path: '', component: BlogListingComponent },
     ]
   }

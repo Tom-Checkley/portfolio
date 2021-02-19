@@ -10,7 +10,7 @@ import { GetCategoriesService } from '../../services/get-categories.service';
 export class CategoryPostsComponent implements OnInit {
 	posts: any[];
 	category: string;
-    id: string;
+    urlSlug: string;
 
 	constructor(
         private getCategoriesService: GetCategoriesService,
@@ -19,11 +19,11 @@ export class CategoryPostsComponent implements OnInit {
 
 	ngOnInit(): void {
         this.route.paramMap.subscribe((params: ParamMap) => {
-            this.id = params.get('id');
-            this.getCategoriesService.getCategoryPosts(this.id)
+            this.urlSlug = params.get('urlSlug');
+            this.getCategoriesService.getCategoryPosts(this.urlSlug)
                 .subscribe(res => {
-                    this.category = res.data.category.name;
-                    this.posts = res.data.category.posts;
+                    this.category = res.data.categories[0].name;
+                    this.posts = res.data.categories[0].posts;
                 })
         })
     }

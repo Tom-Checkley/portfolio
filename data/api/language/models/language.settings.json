@@ -19,6 +19,11 @@
     "posts": {
       "collection": "post",
       "via": "languages"
+    },
+    "urlSlug": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
